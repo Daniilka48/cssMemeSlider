@@ -73,7 +73,7 @@ label:hover .dot {
 
 
 
-
+/* передвиг */
 #slide1:checked ~ .slides {
     transform: translateX(0%);
 }
@@ -88,6 +88,23 @@ label:hover .dot {
 
 #slide4:checked ~ .slides {
     transform: translateX(-300%);
+}
+
+/* нажатие */
+#slide1:checked ~ .dots label[for="slide1"] .dot {
+    background-color: #000000;
+}
+
+#slide2:checked ~ .dots label[for="slide2"] .dot {
+    background-color: #000000;
+}
+
+#slide3:checked ~ .dots label[for="slide3"] .dot {
+    background-color: #000000;
+}
+
+#slide4:checked ~ .dots label[for="slide4"] .dot {
+    background-color: #000000;
 }
 
 

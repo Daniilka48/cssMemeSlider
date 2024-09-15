@@ -11,10 +11,10 @@ body {
     background-color: #a54b4b;
 }
 .slider {
-    position: relative;
     width: 80%;
     overflow: hidden;
     background-color: rgb(24, 216, 206);
+    border-radius: 10px;
 }
 .slides {
     display: flex;
@@ -29,7 +29,8 @@ body {
 .slide img {
     width: 40%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50px;
+    /* padding: 20px 0 0 0; */
 }
 .text {
     text-align: center;
@@ -107,4 +108,8 @@ label:hover .dot {
     background-color: #000000;
 }
 
+
+@media (max-width: 500px) {
+    
+}
 

@@ -73,7 +73,6 @@ label:hover .dot {
 
 
 
-
 /* передвиг */
 #slide1:checked ~ .slides {
     transform: translateX(0%);
@@ -91,25 +90,75 @@ label:hover .dot {
     transform: translateX(-300%);
 }
 
+
 /* нажатие */
-#slide1:checked ~ .dots label[for="slide1"] .dot {
+#slide1:checked ~ .dots-text .dots label[for="slide1"] .dot {
     background-color: #000000;
 }
 
-#slide2:checked ~ .dots label[for="slide2"] .dot {
+#slide2:checked ~ .dots-text .dots label[for="slide2"] .dot {
     background-color: #000000;
 }
 
-#slide3:checked ~ .dots label[for="slide3"] .dot {
+#slide3:checked ~ .dots-text .dots label[for="slide3"] .dot {
     background-color: #000000;
 }
 
-#slide4:checked ~ .dots label[for="slide4"] .dot {
+#slide4:checked ~ .dots-text .dots label[for="slide4"] .dot {
     background-color: #000000;
 }
 
 
-@media (max-width: 500px) {
-    
+/* текст слева от радиокнопок */
+.dots-text {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.title {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.texts {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.text-slide {
+    display: flex;
+    min-width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#slide1:checked ~ .dots-text .texts {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .dots-text .texts {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .dots-text .texts {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .dots-text .texts {
+    transform: translateX(-300%);
+}
+
+@media (max-width: 768px) {
+    .dots-text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text-slide {
+        display: flex;
+        min-width: 100%;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        justify-content: center;
+    }
 }
 

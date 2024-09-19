@@ -14,7 +14,7 @@ body {
     width: 80%;
     overflow: hidden;
     background-color: rgb(24, 216, 206);
-    border-radius: 10px;
+    border-radius: 2vw; 
 }
 .slides {
     display: flex;
@@ -29,15 +29,9 @@ body {
 .slide img {
     width: 40%;
     height: auto;
-    border-radius: 50px;
-    /* padding: 20px 0 0 0; */
+    border-radius: 5vh; 
 }
-.text {
-    text-align: center;
-    font-size: 25px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 
 
 
@@ -50,8 +44,8 @@ input[type="radio"] {
     justify-content: center;
 }
 .dot {
-    height: 15px;
-    width: 15px;
+    height: 1vw; 
+    width: 1vw;
     background-color: #5f69f3;
     border-radius: 50%;
     cursor: pointer;
@@ -61,15 +55,18 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px;
+    height: 2vw; 
+    width: 2vw;
+    margin: 0 0.5vw;  
     cursor: pointer;
     
 }
 label:hover .dot {
     background-color: #ffffff;
 }
+label:active .dot{
+    background-color: rgb(255, 0, 0, 0.5);
+  }
 
 
 
@@ -113,7 +110,7 @@ label:hover .dot {
 .dots-text {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 0.5vw 0; 
 }
 .title {
     overflow: hidden;
@@ -127,7 +124,7 @@ label:hover .dot {
 .text-slide {
     display: flex;
     min-width: 100%;
-    font-size: 25px;
+    font-size: 1.3vw;    
     font-weight: bold;
 }
 
@@ -156,9 +153,17 @@ label:hover .dot {
         display: flex;
         min-width: 100%;
         text-align: center;
-        font-size: 25px;
+        font-size: 1.3vw;
         font-weight: bold;
         justify-content: center;
     }
+    .title {
+        width: 30vw;
+        height: 2vw;
+        margin: 0 auto;
+    }
+
+
+    
 }
 
